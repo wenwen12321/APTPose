@@ -1,5 +1,9 @@
 # APTPose: Anatomy-aware Pre-Training for 3D Human Pose Estimation
 
+This repo is the official implementation for **APTPose: Anatomy-aware Pre-Training for 3D Human Pose Estimation**. The paper has been accepted to **BMVC 2024**.
+
+<p align="center"><img src="demo/demo_video.gif" width="50%" alt="" /></p>
+
 ## Dependencies
 The code is developed and tested under the following environment
 
