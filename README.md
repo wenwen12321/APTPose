@@ -121,5 +121,4 @@ python run_in_the_wild.py -k detectron_pt_coco -f 243 -b 160 --train 1 --layers 
 ```
 
 ## Acknowledgement
-Our code refers to the following repositories. Thanks authors for releasing the codes.
-* [P-STMO](https://github.com/paTRICK-swk/P-STMO)
+We would like to acknowledge the contributions of public project [P-STMO](https://github.com/paTRICK-swk/P-STMO), whose code has been utilized in this repository.
