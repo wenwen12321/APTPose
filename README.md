@@ -1,8 +1,14 @@
-# APTPose: Anatomy-aware Pre-Training for 3D Human Pose Estimation
+<!--[![arXiv]()-->
+<!--[![BMVC](https://bmvc2024.org/assets/images/layout/bmvc-2024.png)](https://bmvc2024.org/programme/accepted_papers/)-->
 
+# APTPose: Anatomy-aware Pre-Training for 3D Human Pose Estimation (BMVC2024)
+
+<!--
 This repo is the official implementation for **APTPose: Anatomy-aware Pre-Training for 3D Human Pose Estimation**. The paper has been accepted to **BMVC 2024**.
+-->
 
-<p align="center"><img src="demo/demo_video.gif" width="50%" alt="" /></p>
+## Demo
+<p align="center"><img src="demo/demo_video.gif" width="30%" alt="" /></p>
 
 ## Dependencies
 The code is developed and tested under the following environment
@@ -33,8 +39,7 @@ Make sure you have the following dependencies installed:
 
 
 ## Dataset
-You can download the processed **Human3.6M & MPI-INF-3DHP data** from [data folder]([https://drive.google.com/drive/folders/1MuG9RMYvJT69Wxx2evYktePoCoTs6f88?usp=share_link](https://drive.google.com/drive/folders/1N2VmRYKDknNW44bMOGiBygcscbj8N1uO?usp=sharing) in our google drive. Please put them in the `./dataset` directory. 
-(Preprocessing code are borrowed from [P-STMO](https://github.com/paTRICK-swk/P-STMO))
+You can download the processed **Human3.6M & MPI-INF-3DHP data** provided by P-STMO ([h36m data](https://drive.google.com/file/d/1FMgAf_I04GlweHMfgUKzB0CMwglxuwPe/view) and [3dhp data](https://drive.google.com/file/d/11eBe175Rgj6IYrwZwa1oXTOyHPxGuWyi/view)). Please put them in the `./dataset` directory.
 
 For **Human3.6M**, `data_2d_h36m_gt.npz` is the ground truth of 2D keypoints. `data_2d_h36m_cpn_ft_h36m_dbb.npz` is the 2D keypoints obatined by [CPN](https://github.com/GengDavid/pytorch-cpn).  `data_3d_h36m.npz` is the ground truth of 3D human joints.
 
@@ -75,7 +80,7 @@ python run_3dhp.py -f 81 -b 160 --train 1 --layers 3 --lr 0.0007 -lrd 0.97 --MAE
 
 
 ## Evaluating script
-After downloading our models from [model folder](https://drive.google.com/drive/folders/1SWrPoHstyKwjoAl63DgdVYS8B955Qtoq?usp=sharing) and put them (e.g. model_243_pretrain/) in the `./checkpoint` directory.
+After downloading our models from [model folder](https://drive.google.com/drive/u/1/folders/1N2VmRYKDknNW44bMOGiBygcscbj8N1uO) and put them (e.g. h36m_cpn_5_4260.pth) in the `./checkpoint` directory.
 
 ### Human3.6M
 **(1) To evaluate our model (trained using GT 2D keypoints)**
